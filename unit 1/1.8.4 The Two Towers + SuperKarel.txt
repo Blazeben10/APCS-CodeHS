@@ -1,0 +1,47 @@
+public class TwoTowersKarel extends SuperKarel
+{
+
+	public void run()
+	{
+		//code
+		
+		stackBalls();
+		move();
+		stackBalls();
+		climbBalls();
+	}
+    
+    private void stackBalls()
+    {
+        move();
+        turnLeft();
+        putBall();
+        move();
+        putBall();
+        move();
+        putBall();
+        move();
+        turnAround();
+        moveThree();
+        turnLeft();
+    }
+    
+    
+    
+    private void moveThree()
+    {
+        move();
+        move();
+        move();
+    }
+    
+    
+    private void climbBalls()
+    {
+        turnLeft();
+        move();
+        move();
+        move();
+        turnRight();
+    }
+}

@@ -1,0 +1,59 @@
+public class SuperCleanupKarel extends SuperKarel
+{
+    public void run() 
+    {
+	
+    	while(frontIsClear()) 
+    	{
+    	    cleanAvenue();
+    	}
+    	cleanAvenue();
+    	turnLeft();
+    	turnLeft();
+    	turnLeft();
+    	while(frontIsClear())
+    	{
+    	    move();
+    	}
+    	turnAround();
+    	
+    }
+    
+    
+    
+    private void cleanAvenue()
+    {
+        if(ballsPresent()) 
+        { //1
+            takeBall();
+        }
+        turnLeft();
+        while(frontIsClear()) 
+        { //2
+            move();
+            if(ballsPresent()) 
+            {
+                takeBall();
+            }
+        }
+        turnAround();
+        while(frontIsClear()) 
+        { //3
+            move();
+            if(ballsPresent())
+            {
+                takeBall();
+            }
+        }
+       
+        if(leftIsClear())
+        { //4
+            turnLeft();
+        }
+        if(frontIsClear())
+        { //5
+            move();
+        }
+    }
+    
+}

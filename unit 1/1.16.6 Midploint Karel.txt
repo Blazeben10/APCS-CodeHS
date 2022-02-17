@@ -1,0 +1,34 @@
+public class MidpointKarel extends SuperKarel
+{
+    public void run()
+    {
+        while(frontIsClear())
+        {
+            turnLeft();
+            if(frontIsClear())
+            {
+                move();
+            }
+            if(frontIsClear())
+            {
+                move();
+            }
+            else
+            {
+                break;
+            }
+            turnRight();
+            move();
+        }
+        while(notFacingSouth())
+        {
+            turnLeft();
+        }
+        while(frontIsClear())
+        {
+            move();
+        }
+        putBall();
+        turnLeft();
+    }
+}

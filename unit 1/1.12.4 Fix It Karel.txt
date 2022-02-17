@@ -1,0 +1,76 @@
+public class KarelProgram extends Karel
+{
+    public void run()
+    {
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        moveClear();
+        putBallInBlank();
+        
+    }
+    
+    private void putBallInBlank()
+    {
+        if(noBallsPresent())
+        {
+            putBall();
+        }
+    }
+    
+    private void moveClear()
+    {
+        if(leftIsClear())
+        {
+            for(int i = 0; i < 4; i++)
+            {
+                putBall();
+            }
+            takeBall();
+            move();
+        }
+        else
+        {
+            if(frontIsClear())
+            {
+                move();
+            }
+        }
+    }
+    
+    
+}

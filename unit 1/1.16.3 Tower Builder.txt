@@ -1,0 +1,44 @@
+
+public class TowerBuilderKarel extends SuperKarel
+{
+    public void run()
+    {
+        for(int i = 0; i<10; i++)
+        {
+            //if there is no stack build a tower
+            if(noBallsPresent())
+            {
+                buildTower();
+            }
+            if(frontIsClear())
+            {
+                move();
+                if(frontIsBlocked())
+                {
+                    break;
+                }
+                move();
+            }
+            if(ballsPresent())
+            {
+                break;
+            }
+        }
+    }
+    //the code to build the tower
+    private void buildTower()
+    {
+        turnLeft();
+        for(int i = 0; i<3; i++)
+        {
+            putBall();
+            move();
+        }
+        //how to get down from the tower
+        turnAround();
+        move();
+        move();
+        move();
+        turnLeft();
+    }
+}

@@ -1,0 +1,13 @@
+public class DizzyKarel extends SuperKarel
+{
+    public void run()
+    {
+        // your code here  
+        for(int i = 0; i < 32; i++)
+        {
+            
+            turnLeft();
+           
+        }
+    }
+}

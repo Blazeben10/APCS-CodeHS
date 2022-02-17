@@ -1,0 +1,23 @@
+public class FiremanKarel extends Karel
+{
+    public void run()
+    {
+        turnRight();
+        moveToGround();
+    }
+    
+    private void turnRight()
+    {
+        turnLeft();
+        turnLeft();
+        turnLeft();
+    }
+    
+    private void moveToGround()
+    {
+        move();
+        move();
+        move();
+        turnLeft();
+    }
+}

@@ -1,0 +1,28 @@
+public class GoldMedalKarel extends Karel
+{
+    
+    public void run()
+    {
+        // Your code here    
+        move();
+        putBall();
+        move();
+        putBall();
+        move();
+        putBall();
+        turnLeft();
+        move();
+        turnLeft();
+        move();
+        putBall();
+        turnLeft();
+        turnLeft();
+        turnLeft();
+        move();
+        turnLeft();
+        turnLeft();
+        turnLeft();
+        //this is a waste of time..... could be so much more organized
+    }   
+
+}

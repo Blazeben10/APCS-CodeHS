@@ -1,0 +1,39 @@
+public class FetchKarel extends SuperKarel
+{
+    public void run()
+    {
+        goUp();
+        goDown();
+    }
+    
+    private void goUp()
+    {
+        turnLeft();
+        move4Times();
+        turnRight();
+        move();
+        move();
+        takeBall();
+    }
+    
+    //reverse of what goUp is
+    private void goDown()
+    {
+        turnAround();
+        move();
+        move();
+        turnLeft();
+        move4Times();
+        turnLeft();
+        putBall();
+    }
+    private void move4Times()
+    {
+        for(int i =0; i < 4; i++)
+        {
+            move();
+        }
+    }
+    
+    
+}

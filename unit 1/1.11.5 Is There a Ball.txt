@@ -1,0 +1,20 @@
+// Karel should put a ball on the first spot
+// if there isn't one already there and then move.
+public class IsThereABallKarel extends SuperKarel
+{
+    public void run()
+    {
+        // your code here
+        if (noBallsPresent())
+        {
+            putBall();
+            move();
+        }
+        
+        
+        if(ballsPresent())
+        {
+            move();
+        }
+    }
+}

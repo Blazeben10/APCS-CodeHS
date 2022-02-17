@@ -1,0 +1,32 @@
+public class HurdlesKarel extends SuperKarel
+{
+    public void run()
+    {
+        // your code here   
+        for(int i = 0; i < 5; i++)
+        {
+            moveTwice();
+            jumpHurdle();
+        }
+    }
+    
+    private void jumpHurdle()
+    {
+        turnLeft();
+        moveTwice();
+        turnRight();
+        move();
+        turnRight();
+        moveTwice();
+        turnLeft();
+        
+        
+    }
+    
+    private void moveTwice()
+    {
+        move();
+        move();
+        
+    }    
+}
