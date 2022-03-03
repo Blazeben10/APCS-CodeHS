@@ -18,7 +18,8 @@ public class Currency
     // if value is 12.34, returns 12
     public Integer getDollars()
     {
-        
+        int dollars = (int) value.doubleValue();
+        return dollars;
     }
     
     // Returns the cents portion of value
@@ -26,7 +27,8 @@ public class Currency
     // if value is 12.34, returns 34
     public Integer getCents()
     {
-        
+        int cents = (int)(value * 100) % 100;
+        return cents;
     }
     
     // Returns a String representation
@@ -34,6 +36,7 @@ public class Currency
     // $12.34
     public String toString()
     {
-        
+       // return "$" + value;
+       return ("$" + getDollars() + "." + getCents());
     }
 }
