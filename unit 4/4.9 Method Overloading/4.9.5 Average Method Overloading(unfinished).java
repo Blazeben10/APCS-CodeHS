@@ -32,27 +32,25 @@ public class Average extends ConsoleProgram
     {
         return (one + two) / 2;
     }
-    
     public double average(double one, double two)
+    {
+        return (one + two) / 2;
+    }
+    public double average(double one, int two)
     {
         return (one + two) / 2;
     }
     public double average(int one, double two)
     {
-        return(one + 2) / 2;
+        return average(two, one);
     }
-    public double average (double one, int two)
+    public int average(int one, int two, int thr)
     {
-        return (one + 2) / 2;
+        return (one + two + thr) / 3;
+    }
+    public double average(double one, double two, double thr)
+    {
+        return (one + two + thr) / 3;
     }
     
-    public int average (int one, int two, int three)
-    {
-        return (one + two + three) / 3;
-    }
-    
-    public double average(double one, double two, double three)
-    {
-        return(one + two + three) / 3;
-    }
 }
