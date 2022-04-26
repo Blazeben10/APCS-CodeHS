@@ -1,4 +1,0 @@
-public int search(ArrayList<Double> list, double key)
-{
-    return list.indexOf(key);   
-}
